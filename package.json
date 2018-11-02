@@ -1,0 +1,19 @@
+{
+  "name": "cli-test-project",
+  "version": "1.0.0",
+  "description": "Cli Test project",
+  "main": "cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MIT",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "clear": "^0.1.0",
+    "inquirer": "^6.2.0",
+    "meow": "^5.0.0",
+    "npm": "^6.4.1",
+    "ora": "^3.0.0"
+  }
+}

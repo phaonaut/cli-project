@@ -5,7 +5,7 @@ const chalk = require("chalk");
 const meow = require("meow");
 const ora = require("ora");
 // const inquirer = require('inquirer'); incase i need this
-// const clear = require("clear"); figure out why im getting package error
+const clear = require("clear"); //figure out why im getting package error
 const log = console.log;
 
 const cli = meow(`
@@ -31,7 +31,7 @@ const cli = meow(`
     }
 );
 
-// clear(); this will clear console before running program
+clear(); //this will clear console before running program
 const dots2 = {"interval": 80,"frames": ["⣾","⣽","⣻","⢿","⡿","⣟","⣯","⣷"]};
 const spinner = ora({text:'program started, press any key to continue', spinner: dots2}).start();
 

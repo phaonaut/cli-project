@@ -47,12 +47,32 @@ const keypress = async () => {
       resolve()
     }))
 };
-  
+
+// http://patorjk.com/software/taag/#p=display&h=3&f=Isometric4&t=ABC
+const iso =`
+       
+     
+      ___         ___         ___     
+     /  /\\       /  /\\       /  /\\    
+    /  /::\\     /  /::\\     /  /::\\   
+   /  /:/\\:\\   /  /:/\\:\\   /  /:/\\:\\  
+  /  /::\\ \\:\\ /  /::\\ \\:\\ /  /:/  \\:\\ 
+ /__/:/\\:\\_\\:/__/:/\\:\\_\\:/__/:/ \\  \\:\\
+ \\__\\/  \\:\\/:\\  \\:\\ \\:\\/:\\  \\:\\  \\__\\/
+      \\__\\::/ \\  \\:\\_\\::/ \\  \\:\\      
+      /  /:/   \\  \\:\\/:/   \\  \\:\\     
+     /__/:/     \\__\\::/     \\  \\:\\    
+     \\__\\/          ~~       \\__\\/    
+                                                                      
+
+`;
+
 (async () => {
 
     await keypress();
     spinner.succeed('this step completed');
     spinner.start('program still running, press any key to continue');
+    log(chalk.yellow(iso), "font-family:monospace");
     await keypress();
     spinner.succeed("donezo");
 
